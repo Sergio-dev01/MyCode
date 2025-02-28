@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music app form</title>
+    <style>
+        div {
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Music app registration </h1>
+
+    <form onsubmit="alert('form inviato')"> 
+    <h2>Compila il form per registrarti !</h2>
+
+    <div>
+        <input type="text" id="name" placeholder="Inserisci il tuo nome">
+    </div> 
+
+    <div>
+        <input type="text" id="cognome" placeholder="Inserisci il tuo cognome">
+    </div> 
+
+    <div>
+        <input type="email" id="email" placeholder="Inserisci la tua email">
+    </div> 
+
+    <div>
+        <input type="password" id="password" placeholder="Inserisci la tua password">
+    </div> 
+
+    <div>
+        <input type="date" id="data" placeholder="Inserisci la tua data di nascita">
+    </div> 
+
+    <div>
+        <input type="number" id="numero" placeholder="Inserisci il tuo numero di telefono">
+    </div> 
+
+    <h2>Seleziona il tuo genere musicale preferito:</h2>
+    
+
+    <div>
+        
+        <input type="checkbox" id="rock" name="genere" value="rock">
+        <label for="rock">Rock</label> 
+   
+        <input type="checkbox" id="rap" name="genere" value="rap">
+        <label for="rap">Rap</label>
+        
+        <input type="checkbox" id="pop" name="genere" value="pop">
+        <label for="pop">Pop</label>
+         
+        <input type="checkbox" id="hiphop" name="genere" value="hiphop">
+        <label for="hiphop">Hip Hop</label>
+    
+        <input type="checkbox" id="classical" name="genere" value="classical">
+        <label for="classical">Classical</label>
+
+    </div>
+
+        <br>
+
+        <h2>i nostri termini e condizioni</h2>
+        <p>Per proseguire bisogna accettare i nostri termini e condizioni:</p>
+
+    <div>     
+        <label> 
+            <input type="radio" name="termini" value="accepted" required>
+            Accetto i Termini e le Condizioni
+        </label>
+         
+        <label> 
+            <input type="radio" name="termini" value="not_accepted" required>
+            Non accetto i Termini e le Condizioni
+        </label>
+    </div>
+
+        <br>
+
+        <button type="submit" onclick="alert('Registrazione inviata')">Invia Registrazione</button>
+    </form>
+        
+
+</body>
+</html>
